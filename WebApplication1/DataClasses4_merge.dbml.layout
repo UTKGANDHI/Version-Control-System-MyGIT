@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses4_merge">
+  <DataContextMoniker Name="/DataClasses4_mergeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4e2a9240-f65e-436e-8879-4b6dc8d8e478" absoluteBounds="3.75, 1.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DataClasses4_mergeDataContext/merge_req" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff67b871-8925-4c99-b2f3-076d720b60d6" absoluteBounds="3.765, 2.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

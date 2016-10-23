@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0AEAD1AE-902B-42F6-9B1E-4417E0CB2266}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>G:\zip-v1.9-Reduced\Release\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Add_collab.aspx" />
+    <Content Include="appindex.js" />
+    <Content Include="arrow-next.png" />
+    <Content Include="arrow-prev.png" />
+    <Content Include="black-thread.png" />
+    <Content Include="blue.jpg" />
+    <Content Include="Account.aspx" />
+    <Content Include="app.js" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="bb_blue_en.png" />
+    <Content Include="bootstrap.css" />
+    <Content Include="bootstrap.min.css" />
+    <Content Include="bootstrap.min.js" />
+    <Content Include="Browse.aspx" />
+    <Content Include="changeOwnership.aspx" />
+    <Content Include="changePassword.aspx" />
+    <Content Include="close.png" />
+    <Content Include="Code.aspx" />
+    <Content Include="Compare.aspx" />
+    <Content Include="CreateRepository.aspx" />
+    <Content Include="create_branch.aspx" />
+    <Content Include="Database1.mdf" />
+    <Content Include="DeleteRepo.aspx" />
+    <Content Include="delete_branch.aspx" />
+    <Content Include="demohomepanel.aspx" />
+    <Content Include="Description.aspx" />
+    <Content Include="download.png" />
+    <Content Include="faqs.aspx" />
+    <Content Include="feature-gradient-transparent.png" />
+    <Content Include="figure1.png" />
+    <Content Include="FotorCreated2.jpg" />
+    <Content Include="git-tutorial_branching-merging.png" />
+    <Content Include="gitlogo.png" />
+    <Content Include="git_clone2.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Graph.aspx" />
+    <Content Include="gridview.css" />
+    <Content Include="index.html" />
+    <Content Include="issues.aspx" />
+    <Content Include="jquery-2.1.1.min.js" />
+    <Content Include="jquery-ui.css" />
+    <Content Include="jquery.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="main_page.aspx" />
+    <Content Include="materialize.css" />
+    <Content Include="materialize.min.css" />
+    <Content Include="mdb.css" />
+    <Content Include="mdb.min.css" />
+    <Content Include="Signp.aspx" />
+    <Content Include="Repository.aspx" />
+    <Content Include="Repo_homepage.aspx" />
+    <Content Include="SearchResult.aspx" />
+    <Content Include="search_part1.js" />
+    <Content Include="search_part2.js" />
+    <Content Include="selectVersion.aspx" />
+    <Content Include="ShowConflictingFiles.aspx" />
+    <Content Include="show_merge_req.aspx" />
+    <Content Include="silver.jpg" />
+    <Content Include="Site1.Master" />
+    <Content Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataClasses2.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses2.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataClasses3_repository.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses3_repository.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="DataClasses3.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses3.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DataClasses4_merge.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses4_merge.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="up_del_file.aspx" />
+    <Content Include="white-color-wallpaper-background.jpg" />
+    <Content Include="workflows_gatekeeper.jpg" />
+    <Content Include="xyz.aspx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Home.aspx" />
+    <Content Include="style.css" />
+    <Content Include="styleindex.css" />
+    <Content Include="UserHome.aspx" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="w3.css" />
+    <Content Include="wallpaper-black-blue-desktop-picture.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WIN_20160110_13_28_28_Pro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account.aspx.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account.aspx.designer.cs">
+      <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_collab.aspx.cs">
+      <DependentUpon>Add_collab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_collab.aspx.designer.cs">
+      <DependentUpon>Add_collab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Branch.cs" />
+    <Compile Include="Browse.aspx.cs">
+      <DependentUpon>Browse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Browse.aspx.designer.cs">
+      <DependentUpon>Browse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="changeOwnership.aspx.cs">
+      <DependentUpon>changeOwnership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="changeOwnership.aspx.designer.cs">
+      <DependentUpon>changeOwnership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="changePassword.aspx.cs">
+      <DependentUpon>changePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="changePassword.aspx.designer.cs">
+      <DependentUpon>changePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code.aspx.cs">
+      <DependentUpon>Code.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code.aspx.designer.cs">
+      <DependentUpon>Code.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Commit.cs" />
+    <Compile Include="Compare.aspx.cs">
+      <DependentUpon>Compare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compare.aspx.designer.cs">
+      <DependentUpon>Compare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateRepository.aspx.cs">
+      <DependentUpon>CreateRepository.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateRepository.aspx.designer.cs">
+      <DependentUpon>CreateRepository.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="create_branch.aspx.cs">
+      <DependentUpon>create_branch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="create_branch.aspx.designer.cs">
+      <DependentUpon>create_branch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses2.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses2.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses3.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses3.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses3_repository.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses3_repository.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses4_merge.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses4_merge.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteRepo.aspx.cs">
+      <DependentUpon>DeleteRepo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteRepo.aspx.designer.cs">
+      <DependentUpon>DeleteRepo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delete_branch.aspx.cs">
+      <DependentUpon>delete_branch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delete_branch.aspx.designer.cs">
+      <DependentUpon>delete_branch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demohomepanel.aspx.cs">
+      <DependentUpon>demohomepanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demohomepanel.aspx.designer.cs">
+      <DependentUpon>demohomepanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Description.aspx.cs">
+      <DependentUpon>Description.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Description.aspx.designer.cs">
+      <DependentUpon>Description.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Email.cs" />
+    <Compile Include="faqs.aspx.cs">
+      <DependentUpon>faqs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="faqs.aspx.designer.cs">
+      <DependentUpon>faqs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Graph.aspx.cs">
+      <DependentUpon>Graph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Graph.aspx.designer.cs">
+      <DependentUpon>Graph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="graphlogging.cs" />
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="issues.aspx.cs">
+      <DependentUpon>issues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="issues.aspx.designer.cs">
+      <DependentUpon>issues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logging.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main_page.aspx.cs">
+      <DependentUpon>main_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signp.aspx.cs">
+      <DependentUpon>Signp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signp.aspx.designer.cs">
+      <DependentUpon>Signp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProtectedData.cs" />
+    <Compile Include="Repository.aspx.cs">
+      <DependentUpon>Repository.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Repository.aspx.designer.cs">
+      <DependentUpon>Repository.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Repo_homepage.aspx.cs">
+      <DependentUpon>Repo_homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Repo_homepage.aspx.designer.cs">
+      <DependentUpon>Repo_homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchResult.aspx.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchResult.aspx.designer.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="selectVersion.aspx.cs">
+      <DependentUpon>selectVersion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="selectVersion.aspx.designer.cs">
+      <DependentUpon>selectVersion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowConflictingFiles.aspx.cs">
+      <DependentUpon>ShowConflictingFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowConflictingFiles.aspx.designer.cs">
+      <DependentUpon>ShowConflictingFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="show_merge_req.aspx.cs">
+      <DependentUpon>show_merge_req.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="show_merge_req.aspx.designer.cs">
+      <DependentUpon>show_merge_req.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="up_del_file.aspx.cs">
+      <DependentUpon>up_del_file.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="up_del_file.aspx.designer.cs">
+      <DependentUpon>up_del_file.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="xyz.aspx.cs">
+      <DependentUpon>xyz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xyz.aspx.designer.cs">
+      <DependentUpon>xyz.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\REPOSITORIES\" />
+    <Folder Include="Content\" />
+    <Folder Include="materialize\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses2.dbml.layout">
+      <DependentUpon>DataClasses2.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses3_repository.dbml.layout">
+      <DependentUpon>DataClasses3_repository.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses3.dbml.layout">
+      <DependentUpon>DataClasses3.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses4_merge.dbml.layout">
+      <DependentUpon>DataClasses4_merge.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2950</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2950/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
